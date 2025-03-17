@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <meta name="theme-color" content="#000000" />
+
+    <title>App FEMMAP METODOLOGIA</title>
+  </head>
+  <body>
+  <header>
+
+      <nav id="navbar">
+          <img id="nav_logo" src="src/images/logo.png" height="40px">
+
+          <ul id="nav_list">
+              <li class="nav-item-metodologia">
+                  <a href="/" lang='eng'>GO BACK</a>
+                  <a href="/"  lang='pt-br' hidden>VOLTAR</a>
+              </li>
+              <li class="nav-item-metodologia">
+                <a href="https://wa.me/" target="_blank">
+                  <img src="src/images/whatsapp.png" height="40px" alt="">
+                </a>
+              </li>
+              <li class="nav-item-metodologia">
+                <button class='btn-change-language' onclick="changeLanguage();" lang="en">
+                  <div style="width: 40px; border-right: 0.5px solid">EN</div>
+                  <div style="width: 40px; border-left: 0.5px solid">PT</div>
+                </button>
+              </li>
+          </ul>
+
+          <button id="mobile_btn">
+              <i class="fa-solid fa-bars"></i>
+          </button>
+      </nav>
+
+
+      <div id="mobile_menu">
+          <ul id="mobile_nav_list">
+              <li class="nav-item-metodologia">
+                <a href="/" lang='eng'>GO BACK</a>
+                <a href="/" lang='pt-br' hidden>VOLTAR</a>
+            </li>
+
+              <li class="nav-item-metodologia">
+                <a href="https://wa.me/" target="_blank">
+                  <img src="src/images/whatsapp.png" height="40px" alt="">
+                </a>
+              </li>
+              <li class="nav-item-metodologia">
+                <button class='btn-change-language' onclick="changeLanguage();" lang="en">
+                  <div style="width: 40px; border-right: 0.5px solid">EN</div>
+                  <div style="width: 40px; border-left: 0.5px solid">PT</div>
+                </button>
+              </li>
+          </ul>
+
+      </div>
+  </header>
+
+  <main id="content">
+  
+    
+    <div class="metodologia-text" lang='eng'>
+
+      <h2 style="margin-bottom: 20px;"  lang='eng'>Methodology</h2>
+
+      <p>
+        The FemMap platform provides visualization of public domain data available in the information systems of SUS (Unified Health System), therefore, it does not concern private healthcare.
+      </p>
+      <p>
+        Cervical cancer control actions can (and should) be monitored through indicators previously established by the Quality Management Manual for Cytopathology Laboratories (2016) and the Technical Sheet of Indicators for Cervical Cancer Control Actions (2014), documents that guide the present methodology. Thus, the proposal is to present, in one place, various data that are dispersed across different public platforms.
+      </p>
+      <p>
+        The role of FemMap is to facilitate information visualization – including calculating indicators based on raw data and visually representing them in maps down to the municipal scale. Additionally, it offers a tool for searching nearby healthcare providers and a communication channel for those interested in the subject, such as medical professionals, nurses, patients, and managers of laboratories and healthcare services at different levels.
+      </p>
+      <p>
+        The platform is divided into sections:
+      </p>
+
+      <ol class="list-metodologia">
+
+          <li>
+            Tool for visualizing the following indicators:
+            <ul>
+              <li>
+                Crude mortality rate from Cervical Cancer (ICD C53), obtained through the Online Mortality Atlas (INCA - Ministry of Health);
+              </li>
+              <li>
+                Percentage of HSIL, calculated using data available in the Cancer Information System - SISCAN (cervix and breast) - DATASUS;
+              </li>
+              <li>
+                Coverage of Pap smear tests, corresponding to the performance indicator "Proportion of women with cytopathological collection in Primary Healthcare," obtained from the Health Information System for Primary Care – Sisab;
+              </li>
+              <li>
+                HPV vaccination coverage (at age 15, in 2022), calculated based on data from the National Immunization Program Information System (SI-PNI/CGPNI/DEIDT/SVS/MS), available on DATASUS.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            Quality Panel: presents quality indicators for each laboratory registered as a SUS service provider, based on the Cancer Information System - SISCAN (cervix and breast) – DATASUS:
+            <ul>
+              <li>
+                Displays the total number of exams (satisfactory/unsatisfactory/rejected), positive exams, and HSIL results;
+              </li>
+              <li>
+                Positivity index;
+              </li>
+              <li>
+                Percentage of high-grade squamous intraepithelial lesion (HSIL);
+              </li>
+              <li>
+                Percentage of unsatisfactory exams;
+              </li>
+              <li>
+                Percentage of atypical squamous cells of undetermined significance among altered exams (ASC/Altered);
+              </li>
+              <li>
+                Percentage of atypical squamous cells of undetermined significance among satisfactory exams (ASC/Satisfactory);
+              </li>
+              <li>
+                Ratio between atypical squamous cells of undetermined significance and squamous intraepithelial lesion (ASC/SIL);
+              </li>
+              <li>
+                Average exam release time (to be added in the future).
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            Status of service provider laboratories:
+            <ul>
+              <li>
+                In this section, service provider laboratories were geolocated and classified into three levels according to compliance with the quality indicators calculated in the previous panel:
+                <ul>
+                  <li>
+                    Excellent: all indicators within reference values;
+                  </li>
+                  <li>
+                    Fair: 3 to 5 indicators within reference values;
+                  </li>
+                  <li>
+                    Poor: fewer than 3 indicators within reference values.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            Nearby services:
+            <p>
+              In this section, service provider laboratories, as well as Primary Healthcare Units, were geolocated. Address information was obtained through the National Registry of Health Establishments (CNES). Thus, you can find the nearest service to you!
+            </p>
+          </li>
+
+      </ol>
+
+      <p>
+        For more information about the methodology, contact us!
+      </p>
+
+    </div>
+  
+
+    <div class="metodologia-text" lang='pt-br' hidden>
+
+      <h2 style="margin-bottom: 20px;">Metodologia</h2>
+
+      <p>
+        A plataforma FemMap traz a visualização de dados de domínio público, disponíveis nos sistemas de informação do SUS (Sistema Único de Saúde), portanto, não dizem respeito à saúde privada.  
+      </p>
+      <p>
+        As ações de controle do câncer do colo do útero podem (e devem) ser monitoradas por meio de indicadores que foram estabelecidos previamente pelo Manual de Gestão da Qualidade para Laboratório de Citopatologia (2016) e pela Ficha Técnica de Indicadores das Ações de Controle do Câncer do Colo do Útero (2014), documentos que norteiam a presente metodologia. Desta forma, propõe-se a apresentar, em um só lugar, diversos dados que se encontram dispersos em diferentes plataformas públicas. 
+      </p>
+      <p>
+        O papel da FemMap é facilitar a visualização da informação – e isso inclui o cálculo de indicadores com base em dados brutos e a representação visual em mapas até a escala municipal. Além disso, oferece ferramenta de busca de prestadores de serviço em saúde próximos e um canal de comunicação para pessoas interessadas pelo assunto, como profissionais médicos e enfermeiros, pacientes e gestores de laboratórios e da atenção à saúde em seus diferentes níveis. 
+      </p>
+      <p>
+        A plataforma é dividida em seções:
+      </p>
+
+        
+        <ol class="list-metodologia">
+
+          <li>
+            Ferramenta para visualização dos seguintes indicadores:
+            <ul>
+              <li>
+                Taxa bruta de mortalidade por Câncer do Colo do Útero (CID C53), obtida através do Atlas on-line de Mortalidade (INCA - Ministério da Saúde);
+              </li>
+              <li>
+                Percentual de HSIL, calculado por meio de dados disponíveis no Sistema de Informação do Câncer - SISCAN (colo do útero e mama) - DATASUS;
+              </li>
+              <li>
+                Cobertura do exame de Papanicolaou, que corresponde ao indicador de desempenho “Proporção de mulheres com coleta de citopatológico na APS”, obtido no Sistema de Informação em Saúde para a Atenção Básica – Sisab;
+              </li>
+              <li>
+                Cobertura de vacinação contra o HPV (aos 15 anos, em 2022), calculada com base em dados do Sistema de Informação do Programa Nacional de Imunizações (SI-PNI/CGPNI/DEIDT/SVS/MS), disponíveis no DATASUS. 
+              </li>
+            </ul>
+          </li>
+
+
+          <li>
+            Painel de Qualidade: apresenta indicadores da qualidade para cada laboratório cadastrado como prestador de serviço do SUS, com base no Sistema de Informação do Câncer - SISCAN (colo do útero e mama) – DATASUS:
+            <ul>
+              <li>
+                Exibe o total de exames (satisfatórios/insatisfatório/rejeitados), exames positivos e resultado HSIL;
+              </li>
+              <li>
+                Índice de positividade;
+              </li>
+              <li>
+                Percentual de lesão intraepitelial de alto grau (HSIL);
+              </li>
+              <li>
+                Percentual de exames insatisfatórios;
+              </li>
+              <li>
+                Percentual de células escamosas atípicas de significado indeterminado entre os exames alterados (ASC/Alterados);
+              </li>
+              <li>
+                Percentual de células escamosas atípicas de significado indeterminado entre os exames satisfatórios (ASC/Satisfatórios);
+              </li>
+              <li>
+                Razão entre células escamosas atípicas de significado indeterminado e lesão intraepitelial escamosa (ASC/SIL);
+              </li>
+              <li>
+                Tempo médio de liberação dos exames (Acrescentar no futuro).
+              </li>
+            </ul>
+          </li>
+
+
+
+          <li>
+            Status dos laboratórios prestadores de serviço:
+            <ul>
+              <li>
+
+                Nesta seção, os laboratórios prestadores de serviço foram geolocalizados e classificados em três níveis quanto ao cumprimento dos indicadores da qualidade calculados no painel anterior
+                <ul>
+                  <li>
+                    Ótima: todos indicadores dentro dos valores de referência; 
+                  </li>
+                  <li>
+                    Regular: de 3 a 5 indicadores dentro dos valores de referência;
+                  </li>
+                  <li>
+                    Ruim: menos de 3 indicadores dentro dos valores de referência.
+                  </li>
+                </ul>
+              </li>
+
+            </ul>
+          </li>
+
+
+          
+          <li>
+            Serviços próximos:
+            <p>
+              Nesta seção, os laboratórios prestadores de serviço, assim como Unidades Básicas de Saúde, foram geolocalizados.  As informações de endereço foram obtidas através do Cadastro Nacional de Estabelecimentos de Saúde (CNES). Assim, você pode encontrar o serviço mais próximo de você!
+            </p>
+          </li>
+
+        </ol>
+
+
+      <p>
+        Para maiores informações sobre a metodologia, entre em contato conosco!
+      </p>
+
+    </div>
+
+
+  </main>
+
+  <footer>
+
+    <div id='footer-up'>
+      <div id="footer_left">
+        <div class="footer-left-elements">
+          <img src="src/images/logo.png" alt=""  width="50%">
+        </div>
+        <div class="footer-left-elements">
+          <p style="border-bottom: solid #672C93; margin-bottom:5px;">Whatsapp</p>
+          <p>+(55)31 9 8421-4751</p>
+        </div>
+        <div class="footer-left-elements">
+          <p style="border-bottom: solid #672C93;  margin-bottom:5px;">E-mail</p>
+          <p>femmap@org.com.br</p>
+        </div>
+      </div>
+  
+      <div id="footer_right" style="visibility: hidden">
+          <ul id="nav_list">
+            <li class="nav-item">
+              <a href="#home" lang='eng'>HOME</a>
+              <a href="#home"  lang='pt-br' hidden>HOME</a>
+            </li>
+            <li class="nav-item">
+                <a href="#select-map-box" lang='eng'>ONLINE TOOL</a>
+                <a href="#select-map-box"  lang='pt-br' hidden>FERRAMENTA</a>
+            </li>
+            <li class="nav-item">
+                <a href="#dashboard" lang='eng'>DASHBOARD</a>
+                <a href="#dashboard"  lang='pt-br' hidden>PAINEL DE QUALIDADE</a>
+            </li>
+            <li class="nav-item">
+              <a href="#mapa-laboratorios" lang='eng'>LABS BRASIL</a>
+              <a href="#mapa-laboratorios"  lang='pt-br' hidden>LABORATÓRIOS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#nearby" lang='eng'>CARE NEARBY</a>
+              <a href="#nearby"  lang='pt-br' hidden>SERVIÇOS PRÓXIMOS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" lang='eng'>CONTACT US</a>
+              <a href="#contact"  lang='pt-br' hidden>ENTRE EM CONTATO</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+    </div>
+
+    <div id="footer-endereco">
+      <div>
+        © 2024 FemMap - Ouro Preto, MG - CEP 35400-000
+      </div>
+      <div>
+        <img src="src/images/brazil.png" height="30px"></img>
+        <img src="src/images/eua.png" height="30px"></img>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <div id='msg-maintenance' style="position: fixed; top:0; width: 100%; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <div style="width: 300px; height: fit-content; flex-wrap: nowrap;padding: 30px; border-radius: 5px; background-color: rgba(140, 140, 140, 0.724);
+    text-align: center; font-size: 10px; color: rgb(237, 237, 237); display: flex; flex-direction: column; gap:15px;">
+      <i class="fa fa-wrench" aria-hidden="true"  style="font-size: 50px;"></i>
+      <h1>This site is in production, so all data presented here is not based on real values</h1>
+      <button style="border: 0px; font-size: 20px; width: 50%; margin: auto;" onclick='removeMsg()'>close</button>
+    </div>
+  </div> -->
+
+  <script src="src/javascript/script.js"></script>
+
+  </body>
+</html>

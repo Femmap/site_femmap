@@ -1,0 +1,145 @@
+#mapa-laboratorios {
+    display: flex;
+    min-height: 90vh;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    background-color: #aad3df;
+}
+
+#mapa-plot-labs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
+    justify-content: center;
+    width: 100%;
+}
+
+#map-laboratorios-left-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: right;
+    gap: 30px;
+    height: 100%;
+    font-size: 30px;
+    width: 40%;
+}
+
+#map-laboratorios-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    height: 70%;
+    font-size: 30px;
+    width: 100%;
+    gap: 5px;
+}
+
+#icones-qualidade{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    height: 20vh;
+    font-size: 15px;
+}
+
+.icon-text-map-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+#liked-qualidade{
+    display: flex;
+    width: 10%;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20vh;
+    align-items: center;
+}
+
+.icones-maps{
+    height: 36px;
+    width: 27px;
+    margin-right: 10px;
+}
+
+#map-all-labs{
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#titulo-labs{
+    font-size: 1.163rem;
+    color: var(--color-primary-1);
+    width: 100%;
+    text-align: center;
+    background-color: #aad3df;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#conteudo-labs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 90vh;
+    justify-content: flex-end;
+    width: 95%;
+}
+
+#conteudo-labs-row{
+width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+    #mapa-laboratorios {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    #mapa-plot-labs {
+       width: 100%;
+       flex-direction: column;
+       justify-content: space-evenly;
+       min-height: fit-content;
+    }
+    #map-laboratorios-left{
+        width: 95%;
+        text-align: center;
+        /* flex-direction: column; */
+        margin-top: 15px;
+    }
+    #map-laboratorios-left-column{
+        width: 100%;
+        text-align: center;
+    }
+    #map-all-labs{
+        width: 95%;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    #conteudo-labs{
+        flex-direction: column;
+        margin: auto;
+    }
+    /* #liked-qualidade{
+        flex-direction: row;
+        height: fit-content;
+    }
+    #icones-qualidade{
+        flex-direction: row;
+        height: fit-content;
+    }     */
+}

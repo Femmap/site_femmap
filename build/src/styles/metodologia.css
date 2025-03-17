@@ -1,0 +1,55 @@
+.metodologia-text{
+    width: 60vw; 
+    margin: auto; 
+    text-align: justify; 
+    line-height:20px;
+    margin-bottom: 50px;
+}
+
+.metodologia-text p{
+    line-height:20px;
+    margin-bottom: 20px;
+}
+
+.list-metodologia {
+    margin-left: 20px;
+}
+
+.list-metodologia li {
+    margin-left: 20px;
+    line-height:20px;
+    margin-bottom: 20px;
+}
+
+.list-metodologia li ul {
+    margin-left: 20px;
+    line-height:20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.list-metodologia li ul li {
+    margin-left: 20px;
+    line-height:20px;
+    margin-bottom: 20px;
+    list-style-type: disc;
+}
+
+.list-metodologia li ul li ul li{
+    margin-left: 20px;
+    line-height:20px;
+    margin-bottom: 20px;
+    list-style-type: circle;
+}
+
+@media screen and (max-width: 600px) {
+    .metodologia-text{
+        width: 90vw; 
+        margin: auto; 
+        text-align: justify; 
+        display: flex; 
+        flex-direction: column; 
+        gap:20px;
+        margin-bottom: 50px;
+    }
+}

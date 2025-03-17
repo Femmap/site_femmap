@@ -1,0 +1,138 @@
+#contact{
+    display: flex;
+    min-height: 80vh;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f3f3f3;
+}
+
+#contact-box{
+    display: flex;
+    flex-direction: row;
+    min-height: 90vh;
+    justify-content: flex-end;
+    align-items: center;
+    width: 95%;
+}
+
+#left-box-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    padding:15px;
+    border-radius: 5px;
+    margin-top: -90px;
+}
+
+.inputs-form-contact{
+    appearance: none;
+    outline: none;
+    border: 1px solid rgb(137, 137, 137);
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    justify-content: space-around;
+}
+
+.email-form {
+    width: 55%;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.form-contact{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    margin: 30px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    height: fit-content;
+    width: 400px;
+    color: var(--color-primary-4);
+}
+
+#btn-enviar{
+    width: 25%;
+    background-color: var(--color-primary-4);
+    font-size: 30px;
+    height: 40px;
+    border-radius: 15px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    color: aliceblue;
+}
+
+.section-subtitle-contact {
+    font-size: 1.1875rem;
+    color: var(--color-primary-2);
+} 
+.section-title-contact-text {
+    color: var(--color-primary-2);
+    font-size: 1.563rem;
+}
+
+.section-title-contact {
+    color: var(--color-primary-1);
+    font-size: 1.563rem;
+}
+@media screen and (max-width: 650px) {
+    #contact {
+        width: 100%;
+        padding-top: 20px;
+    }
+    #contact-box {
+       width: 100%;
+       flex-direction: column;
+       justify-content: space-evenly;
+       height: fit-content;
+    }
+    #left-box-contact{
+        width: 95%;
+        padding-left: 0px;
+        min-height: fit-contentleft-box-contact;
+    }
+    #contact {
+        width: 95%s;
+    }
+    #welcome {
+        width: 95%s;
+    }
+
+    .email-form {
+        width: 95%;
+    }
+    .form-contact{
+        width: 95%;
+    }
+
+    #btn-enviar{
+        width: 60%;
+    }
+    
+}

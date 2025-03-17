@@ -1,0 +1,196 @@
+#dashboard {
+    display: flex;
+    min-height: 90vh;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-primary-8);
+    justify-content: space-between;
+
+}
+
+#onlinetool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#titulo-dash{
+    font-size: 1.163rem;
+    color: var(--color-primary-1);
+    width: 95%;
+    text-align: center;
+    background-color: #ffffff;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#conteudo-dash{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 90vh;
+    justify-content: space-around;
+    width: 95%;
+}
+
+#selects-id-dashboard {
+    display: flex;
+    min-height: 90vh;
+    width: 300px;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--color-primary-1);
+}
+
+#dashboard-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 70vh;
+    justify-content: space-around;
+    width: 95%;
+}
+
+#dashboard-box-coluna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    justify-content: space-around;
+    width: 95%;
+    color: var(--color-primary-2);
+    background-color: var(--color-primary-7);
+    border-radius: 30px;
+}
+
+#dashboard-box-coluna-laboratorio{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: fit-content;
+}
+
+#dashboard-box-dados-row{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 60vh;
+    justify-content: space-evenly;
+
+}
+
+.dashboard-box-dados-coluna{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    height: 30%;
+    background-color: var(--color-primary-7);
+    align-items: center;
+    justify-content: space-around;
+}
+
+.total-id-exames{
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    align-items: center;
+    width: 30%;
+}
+
+.total-id-porcentagem{
+    background-image: linear-gradient(0.20turn, #484848, #b5b5b5, #ffffff, #b5b5b5, #484848);
+    border-radius: 40px;
+    height: 25px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+}
+
+.total-id-exames-gradient{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 88%;
+    gap:10px;
+}
+
+.pos-porcentage{
+    width: 20%;
+    height: 25px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+    #dashboard {
+        width: 100%;
+        min-height: fit-content;
+        padding-bottom: 60px;
+    }
+    #onlinetool {
+       width: 100%;
+       flex-direction: column;
+       justify-content: space-evenly;
+       min-height: fit-content;
+    }
+    #selects-id-dashboard{
+        width: 95%;
+        min-height: fit-content;
+    }
+    #select-map-inputs-box{
+        width: 95%;
+        min-height: fit-content; 
+    }
+    #select-map-inputs{
+        width: 95%;
+        min-height: fit-content;
+    }
+    #dashboard-box {
+        height: content;
+    }
+    #dashboard-box-dados-row{
+        flex-direction: column;
+        height: content;
+        margin-bottom: 10px;
+    }
+    .dashboard-box-dados-coluna{
+        width: 95%;
+        min-height: fit-content;
+        flex-direction: column;
+        margin-bottom: 30px;
+        background-color: var(--color-primary-7);
+        gap:10px;
+
+    }
+    #conteudo-dash{
+        flex-direction: column;
+    }
+    .total-id-exames{
+        width: 90%;
+    }
+    #dashboard-box-coluna-laboratorio{
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+}
+

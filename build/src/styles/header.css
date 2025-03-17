@@ -1,0 +1,140 @@
+header {
+    width: 100%;
+    padding: 8px 0%;
+    position: sticky;
+    top: 0;
+    background-color:rgb(255, 255, 255);
+    z-index: 3;
+}
+
+#navbar {
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    height: 60px;
+}
+
+#nav_logo {
+    font-size: 24px;
+    /* color: var(--color-primary-6); */
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: var(--color-primary-1);
+    font-weight: 600;
+    min-width: fit-content;
+    text-align: center;
+}
+
+.nav-item.active a {
+    color: var(--color-primary-1);
+    border-bottom: 3px solid var(--color-primary-6);
+}
+
+.nav-item-metodologia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-item-metodologia a {
+    text-decoration: none;
+    color: var(--color-primary-1);
+    font-weight: 600;
+    min-width: fit-content;
+    text-align: center;
+}
+
+
+
+
+
+#mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+/* .btn-change-language{
+    width: 80px;
+    background-image: linear-gradient(to right, #22ff82 50%, #c5c5c5 50%);
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: #7d7d7d -3px -3px 1px 0px inset;
+    font-weight: bold;
+
+}
+      */
+.btn-change-language{
+    text-decoration: none;
+    width: 80px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--color-primary-1);
+    font-weight: 600;
+
+}
+
+@media screen and (max-width: 500px) {
+    #nav_list,
+    #navbar .btn-default {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+
+    #mobile_nav_list .nav-item {
+        list-style: none;
+        text-align: center;
+    } 
+    .btn-change-language{
+        margin: auto;
+    
+    }
+
+}

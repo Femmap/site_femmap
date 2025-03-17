@@ -1,0 +1,55 @@
+.leaflet-control-layers, .leaflet-touch .leaflet-bar {
+  bottom: 15px;
+}
+
+.my-legend .legend-title {
+    text-align: left;
+    margin-bottom: 1px;
+    font-weight: bold;
+    font-size: 90%;
+  }
+
+.my-legend .legend-scale ul {
+  margin: 0;
+  margin-bottom: 0px;
+  padding: 0;
+  float: left;
+  list-style: none;
+  }
+.my-legend .legend-scale ul li {
+  font-size: 80%;
+  list-style: none;
+  margin-left: 0;
+  line-height: 18px;
+  margin-bottom: 0px;
+  }
+.my-legend ul.legend-labels li span {
+  display: block;
+  float: left;
+  height: 16px;
+  width: 16px;
+  margin-right: 5px;
+  margin-left: 0;
+  border: 0px solid #ffffff;
+  background-color: rgb(231, 117, 117);
+  }
+
+.my-legend .legend-source {
+  font-size: 70%;
+  color: #ffffff;
+  clear: both;
+  }
+.my-legend a {
+  color: #ffffff;
+  }
+.my-legend{
+  width: fit-content;
+  padding: 3px;
+  padding-left: 5px;
+  padding-right: 20px;
+
+}
+#legenda-mapa{
+  background-color: #ffffffe7;
+}
+

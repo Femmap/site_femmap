@@ -1,0 +1,150 @@
+#home {
+    display: flex;
+    min-height: 80vh;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-primary-8);
+}
+
+#home-box {
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+}
+
+#upper_box_home{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#left_box_content_home {
+    width: 40%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: var(--color-primary-2);
+}
+
+#left_box_content_home .section-subtitle {
+    width: 100%;
+}
+
+#mapa-id-png {
+    display: flex;
+    justify-content: left;
+    /* transform: rotate(10deg); */
+}
+
+.home-content {
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.faixa-home{
+    min-height: 100px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2.2rem;
+    color: var(--color-primary-1);
+    letter-spacing: -1px;
+}
+
+#textos-faixa {
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 650px) {
+    #home {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    #home-box {
+       width: 100%;
+    }
+    #upper_box_home{
+        width: 95%;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #left_box_content_home {
+        width: 95%;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+    }
+    .faixa-home {
+        display: none;
+    }
+    .home-content {
+        text-align: center;
+    }
+    #mapa-id-png {
+        width: fit-content;
+        margin: auto;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #cta {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
+}
+
+#cta .title {
+    font-size: 4rem;
+    color: var(--color-neutral-1);;
+}
+
+#cta .title span {
+    color: var(--color-primary-6);
+}
+
+#cta .description {
+    font-size: 1.2rem;
+}
+
+#cta_buttons {
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons a {
+    text-decoration: none;
+    color: var(--color-neutral-1);;
+} */
